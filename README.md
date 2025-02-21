@@ -31,3 +31,4 @@
 | gaia     | server         |
 
 ## Screenshots
+![Screenshot from 2025-02-21 at 21_50_26 815171689](https://github.com/user-attachments/assets/958fb6f2-0c00-444b-af2c-90306cfeae20)
