@@ -1,0 +1,21 @@
+keys:
+  - &hanna age13j9wjvrmms3a5n985whz38sp825tn88wwe3jp0u37rjj0c9rrprqmnkwfl
+  - &stella age1cxrnytwmepuf5zexa6zprvq2m6jjmm82fw4f59ds7afjl298mvjsfttnu7
+  - &steamdeck age16743s2dajd7k5x3wqmlq75hzty6gcfjpkv85mwujjzknfzjc6e6srpy6ce
+  - &work-laptop age1p9hk86a4qqzjw62jq2mlmy8h9t233uenekfe9nfjgmqhuqlmg5lq8tcsme
+
+creation_rules:
+  - path_regex: hosts/common/secrets.ya?ml$
+    key_groups:
+      - age:
+          - *hanna
+          - *stella
+          - *steamdeck
+          - *work-laptop
+  - path_regex: home/features/secrets.ya?ml$
+    key_groups:
+      - age:
+          - *hanna
+          - *stella
+          - *steamdeck
+          - *work-laptop
