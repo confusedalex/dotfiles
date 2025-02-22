@@ -42,7 +42,7 @@
       set $down j
       set $up k
       set $right l
-      set $term kitty
+      set $term foot
       set $menu bemenu-run -i
 
       ### Output configuration

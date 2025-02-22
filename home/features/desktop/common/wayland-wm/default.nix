@@ -3,7 +3,7 @@
     ./bemenu.nix
     ./cliphist.nix
     ./imv.nix
-    ./kitty.nix
+    ./foot.nix
     ./swaync.nix
     ./waybar.nix
     ./wlsunset.nix

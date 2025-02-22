@@ -18,8 +18,6 @@
     ./features/desktop/common/signal.nix
     ./features/desktop/common/syncthing.nix
     ./features/desktop/common/wayland-wm
-    ./features/desktop/common/wayland-wm/foot.nix
-    ./features/desktop/common/wayland-wm/kitty.nix
     ./features/desktop/sway
     ./features/games/prismlauncher.nix
     ./features/productivity/mail.nix

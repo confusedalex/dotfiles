@@ -7,7 +7,7 @@
 | Distro            | [NixOS](https://nixos.org/)                                    |
 | Window Manager    | [swaywm](https://swaywm.org/)                                  |
 | Panel Bar         | [waybar](https://github.com/Alexays/Waybar)                    |
-| Terminal          | [Kitty](https://sw.kovidgoyal.net/kitty/)                      |
+| Terminal          | [foot](https://codeberg.org/dnkl/foot)                         |
 | Browser           | [Firefox](https://www.mozilla.org/en-US/firefox/)              |
 | Email             | [aerc](https://aerc-mail.org/)                                 |
 | File Manager      | [yazi](https://yazi-rs.github.io/)                             |
