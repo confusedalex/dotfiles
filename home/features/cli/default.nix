@@ -5,7 +5,6 @@
     ./direnv.nix
     ./fish.nix
     ./git.nix
-    ./helix.nix
     ./newsboat.nix
     ./nix-index.nix
     ./nvim.nix
