@@ -60,6 +60,11 @@
     ];
     resumeDevice = "/dev/disk/by-label/nixos";
   };
+  
+  # needed for vintage story to run
+  nixpkgs.config.permittedInsecurePackages = [
+    "dotnet-runtime-7.0.20"
+  ];
 
   system.stateVersion = "24.05"; # Did you read the comment?
 }

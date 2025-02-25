@@ -10,16 +10,16 @@
     ./features/cli
     ./features/cli/gpg.nix
     ./features/desktop/common/code.nix
+    ./features/desktop/common/emacs.nix
     ./features/desktop/common/firefox.nix
     ./features/desktop/common/intellij.nix
-    ./features/desktop/common/emacs.nix
     ./features/desktop/common/office.nix
     ./features/desktop/common/school.nix
     ./features/desktop/common/signal.nix
     ./features/desktop/common/syncthing.nix
     ./features/desktop/common/wayland-wm
     ./features/desktop/sway
-    ./features/games/prismlauncher.nix
+    ./features/games
     ./features/productivity/mail.nix
     ./global
   ];
