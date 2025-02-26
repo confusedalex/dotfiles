@@ -19,7 +19,8 @@
     ./features/desktop/common/syncthing.nix
     ./features/desktop/common/wayland-wm
     ./features/desktop/sway
-    ./features/games
+    ./features/games/prismlauncher.nix
+    ./features/games/vintagestory.nix
     ./features/productivity/mail.nix
     ./global
   ];
