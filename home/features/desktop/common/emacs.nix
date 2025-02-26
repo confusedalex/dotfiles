@@ -2,10 +2,11 @@
 {
   programs.emacs = {
     enable = true;
-    package = pkgs.emacs30-pgtk.pkgs.withPackages (epkgs: [
-      (epkgs.treesit-grammars.with-grammars (grammars: [ grammars.tree-sitter-bash ]))
-    ]);
+    package = pkgs.emacs30-pgtk;
   };
 
-  home.persistence."/persist/home/alex/".directories = [ ".config/emacs" ];
+  home.persistence."/persist/home/alex/".directories = [
+    ".config/emacs"
+    ".config/doom"
+  ];
 }
