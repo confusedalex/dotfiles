@@ -11,6 +11,7 @@
     nwg-displays
     udiskie
     shotman
+    sway-audio-idle-inhibit
   ];
 
   # Add flatpak to path, so it appears in bemenu
@@ -34,6 +35,7 @@
       exec udiskie -nt
       exec blueman-applet
       exec nm-applet
+      exec sway-audio-idle-inhibit
 
       # Variables
       set $mod Mod4
@@ -60,7 +62,7 @@
         timeout 300 '$swaylock' \
         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
         before-sleep '$swaylock'
-      
+
       # Input configuration
       input * {
         xkb_layout "eu"
