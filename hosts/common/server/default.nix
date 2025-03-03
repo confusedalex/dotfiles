@@ -10,5 +10,6 @@
     ./jellyfin.nix
     ./nextcloud.nix
     ./paperless.nix
+    ./thelounge.nix
   ];
 }
