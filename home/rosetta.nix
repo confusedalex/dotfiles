@@ -13,6 +13,7 @@
     ./features/desktop/common/emacs.nix
     ./features/desktop/common/firefox.nix
     ./features/desktop/common/intellij.nix
+    ./features/desktop/common/jellyfin.nix
     ./features/desktop/common/office.nix
     ./features/desktop/common/school.nix
     ./features/desktop/common/signal.nix
