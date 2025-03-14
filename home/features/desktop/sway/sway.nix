@@ -36,6 +36,7 @@
       exec blueman-applet
       exec nm-applet
       exec sway-audio-idle-inhibit
+      exec emacs --daemon
 
       # Variables
       set $mod Mod4
@@ -88,6 +89,7 @@
       bindsym $mod+Return exec $term
       bindsym $mod+Shift+q kill
       bindsym $mod+space exec $menu
+      bindsym $mod+e exec emacsclient -c
       floating_modifier $mod normal
 
       # Reload the configuration file
@@ -157,7 +159,6 @@
       # Switch the current container between different layout styles
         bindsym $mod+Shift+s layout stacking
         bindsym $mod+w layout tabbed
-        bindsym $mod+e layout toggle split
 
       # Make the current focus fullscreen
         bindsym $mod+f fullscreen
