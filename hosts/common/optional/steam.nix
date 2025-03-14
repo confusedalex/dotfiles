@@ -1,5 +1,13 @@
+{ pkgs, ... }:
 {
   nixpkgs.config.allowUnfree = true;
-  programs.steam.enable = true;
-  programs.steam.gamescopeSession.enable = true;
+
+  programs = {
+    gamemode.enable = true;
+    steam = {
+      enable = true;
+      gamescopeSession.enable = true;
+      extraCompatPackages = with pkgs; [ proton-ge-bin ];
+    };
+  };
 }
