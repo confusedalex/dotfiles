@@ -94,8 +94,18 @@
       '';
     };
   };
-
-  home.persistence."/persist/home/alex".directories = [ ".mozilla/firefox" ];
+  home = {
+    persistence."/persist/home/alex" = {
+      directories = [
+        ".mozilla/firefox"
+      ];
+      files = [
+        # mimeapps.list is a file where default apps are listed. So firefox stays default browser
+        ".config/mimeapps.list"
+      ];
+    };
+    sessionVariables.BROWSER = "firefox";
+  };
 
   xdg.mimeApps.defaultApplications = {
     "text/html" = [ "firefox.desktop" ];
@@ -103,5 +113,4 @@
     "x-scheme-handler/http" = [ "firefox.desktop" ];
     "x-scheme-handler/https" = [ "firefox.desktop" ];
   };
-  home.sessionVariables.BROWSER = "firefox";
 }
