@@ -1,11 +1,22 @@
 { pkgs, ... }:
 {
+  programs.emacs = {
+    enable = true;
+    package = pkgs.emacs-pgtk;
+    extraPackages = epkgs: [ epkgs.treesit-grammars.with-all-grammars ];
+  };
+
   home.packages = with pkgs; [
-    emacs-pgtk
+    # LSPs
+    python311Packages.python-lsp-server
+    nixd
   ];
 
   home.persistence."/persist/home/alex/".directories = [
-    ".config/emacs"
-    ".config/doom"
+    ".emacs.d"
+
+    # Doom
+    # ".config/emacs"
+    # ".config/doom"
   ];
 }
