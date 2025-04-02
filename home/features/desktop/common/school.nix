@@ -6,6 +6,7 @@
     ciscoPacketTracer8
     anki
     stable.zotero
+    python3
   ];
 
   home.persistence."/persist/home/alex/".directories = [
