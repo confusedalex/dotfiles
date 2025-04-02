@@ -37,4 +37,9 @@
       }
     ];
   };
+
+  home.persistence."/persist/home/alex".directories = [
+    # github cli
+    ".config/gh"
+  ];
 }
