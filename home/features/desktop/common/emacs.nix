@@ -12,11 +12,19 @@
   };
 
   home.packages = with pkgs; [
-    # LSPs
-    python311Packages.python-lsp-server
     # email
     mu
+	
+	# Copilot
+	copilot-language-server
+
+    # Nix
+    nixfmt-rfc-style
     nixd
+
+    # Python
+    ruff
+    basedpyright
   ];
 
   home.persistence."/persist/home/alex/".directories = [
