@@ -4,10 +4,10 @@
     enable = true;
     profiles.alex = {
       search = {
-        default = "DuckDuckGo";
+        default = "ddg";
         force = true;
       };
-      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+      extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
         auto-tab-discard
         bitwarden
         darkreader
