@@ -295,7 +295,7 @@
         userName = "alexander.loll@studium.fernuni-hagen.de";
         passwordCommand = "${pkgs.coreutils}/bin/cat ${config.sops.secrets.fernuni-hagen-email-password.path}";
       };
-      work = {
+      work-qdag = {
         aerc.enable = true;
         address = "a.loll@qvest-digital.com";
         realName = "Alexander Loll";
@@ -304,6 +304,14 @@
           enable = true;
           create = "both";
           expunge = "both";
+
+          patterns = [
+            "*"
+            "![Gmail]*"
+            "[Gmail]/Sent Mail"
+            "[Gmail]/Starred"
+            "[Gmail]/All Mail"
+          ];
         };
         msmtp.enable = true;
         flavor = "gmail.com";
