@@ -15,8 +15,8 @@
     # email
     mu
 	
-	# Copilot
-	copilot-language-server
+    # Copilot
+    copilot-language-server
 
     # Nix
     nixfmt-rfc-style
