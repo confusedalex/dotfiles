@@ -24,7 +24,7 @@
 
     # Python
     ruff
-    basedpyright
+    pyright
   ];
 
   home.persistence."/persist/home/alex/".directories = [
