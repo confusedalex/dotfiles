@@ -238,7 +238,9 @@
     msmtp.enable = true;
     notmuch = {
       enable = true;
-      hooks.preNew = "mbsync --all";
+      new.tags = [
+        "new"
+      ];
     };
   };
 
