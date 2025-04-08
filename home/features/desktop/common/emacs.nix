@@ -18,6 +18,11 @@
     # Copilot
     copilot-language-server
 
+    # Go
+    gopls
+    go
+    go-tools
+
     # Nix
     nixfmt-rfc-style
     nixd
