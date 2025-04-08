@@ -275,7 +275,7 @@
         imapnotify = {
           enable = true;
           boxes = [ "Inbox" ];
-          onNotify = "${pkgs.isync}/bin/mbsync --all && ${pkgs.libnotify}/bin/notify-send 'New mail arrived'";
+          onNotify = "${pkgs.isync}/bin/mbsync --all; ${pkgs.libnotify}/bin/notify-send 'New mail arrived'; mu index";
         };
       };
       uni-hagen = {
