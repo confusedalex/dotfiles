@@ -1,11 +1,12 @@
 {
   lib,
   inputs,
-  pkgs,
-  config,
   ...
 }:
 {
+
+  imports = [ inputs.impermanence.nixosModules.impermanence ];
+
   boot.initrd.postDeviceCommands = lib.mkAfter ''
     mkdir /btrfs_tmp
     mount /dev/mapper/crypted /btrfs_tmp
