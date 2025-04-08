@@ -2,7 +2,7 @@
 {
   services.restic.backups = {
     daily = {
-      repository = config.sops.secrets."restic_repository_appdata";
+      repositoryFile = config.sops.secrets."restic_repository_appdata".path;
       passwordFile = config.sops.secrets."backup_gaia".path;
       paths = [ "/storage/appdata" ];
     };
