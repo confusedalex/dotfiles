@@ -8,6 +8,7 @@
     extraPackages = epkgs: [
       epkgs.treesit-grammars.with-all-grammars
       epkgs.mu4e
+      epkgs.vterm
     ];
   };
 
