@@ -7,7 +7,6 @@
     ./swaync.nix
     ./waybar.nix
     ./wlsunset.nix
-    ./wlsunset.nix
     ./zathura.nix
   ];
 
