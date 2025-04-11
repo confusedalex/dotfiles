@@ -13,24 +13,30 @@
   };
 
   home.packages = with pkgs; [
+    # copilot
+    copilot-language-server
+	
     # email
     mu
-	
-    # Copilot
-    copilot-language-server
 
-    # Go
+    # go
     gopls
     go
     go-tools
 
-    # Nix
+    # nix
     nixfmt-rfc-style
     nixd
 
-    # Python
+    # python
     ruff
     pyright
+
+    # typescript
+    typescript-language-server
+
+    # vuejs
+    vue-language-server
   ];
 
   home.persistence."/persist/home/alex/".directories = [
