@@ -4,7 +4,7 @@
 
   services.wlsunset = {
     enable = true;
-    latitude = "6.952778";
-    longitude = "50.936389";
+    latitude = "50.735";
+    longitude = "5.104";
   };
 }
