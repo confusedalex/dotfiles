@@ -45,6 +45,7 @@
         ".local/share/direnv"
         ".config/sops"
         ".local/share/Steam"
+        ".local/share/nix" # trusted settings and repl history
       ];
       files = [ ".screenrc" ];
       allowOther = true;
