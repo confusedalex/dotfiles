@@ -37,6 +37,9 @@
 
     # vuejs
     vue-language-server
+
+    # misc
+    nodePackages.prettier
   ];
 
   home.persistence."/persist/home/alex/".directories = [
