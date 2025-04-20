@@ -32,6 +32,8 @@
     ruff
     pyright
 
+    mermaid-cli
+
     # typescript
     typescript-language-server
 
