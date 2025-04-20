@@ -2,7 +2,7 @@
 {
   home = {
     packages = [
-      pkgs.jetbrains.idea-community-bin
+      pkgs.jetbrains.idea-ultimate
     ];
     persistence."/persist/home/alex/" = {
       directories = [
