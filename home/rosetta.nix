@@ -47,7 +47,10 @@
         ".local/share/Steam"
         ".local/share/nix" # trusted settings and repl history
       ];
-      files = [ ".screenrc" ];
+      files = [
+        ".screenrc"
+        ".config/mimeapps.list"
+      ];
       allowOther = true;
     };
   };
