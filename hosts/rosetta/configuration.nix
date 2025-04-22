@@ -13,6 +13,7 @@
     ./impermanence.nix
     ../common/global
     ../common/optional/bluetooth.nix
+    ../common/optional/displaylink.nix
     ../common/optional/docker.nix
     ../common/optional/keyd.nix
     ../common/optional/network-manager.nix
