@@ -9,6 +9,7 @@
     inputs.nur.modules.homeManager.default
     ./features/cli
     ./features/cli/gpg.nix
+    ./features/desktop/common/chromium.nix
     ./features/desktop/common/code.nix
     ./features/desktop/common/emacs.nix
     ./features/desktop/common/intellij.nix
@@ -28,9 +29,6 @@
 
   home = {
     stateVersion = "24.05";
-    packages = with pkgs; [
-      chromium
-    ];
 
     persistence."/persist/home/alex" = {
       directories = [
