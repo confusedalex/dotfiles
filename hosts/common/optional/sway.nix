@@ -1,11 +1,9 @@
 { pkgs, ... }:
 {
-  # Enable Polkit, needed for apps like Solaar
-  security.polkit.enable = true;
 
   systemd = {
     user.services.polkit-gnome-authentication-agent-1 = {
-     description = "polkit-gnome-authentication-agent-1";
+      description = "polkit-gnome-authentication-agent-1";
       wantedBy = [ "graphical-session.target" ];
       wants = [ "graphical-session.target" ];
       after = [ "graphical-session.target" ];
@@ -18,7 +16,25 @@
       };
     };
   };
+  security = {
+    # Enable Polkit, needed for apps like Solaar
+    polkit.enable = true;
+    pam = {
+      # Auto-unlock the keyring on login
+      services.login.enableGnomeKeyring = true;
+      services.greetd.enableGnomeKeyring = true;
 
+      # See https://wiki.nixos.org/wiki/Sway#Inferior_performance_compared_to_other_distributions
+      loginLimits = [
+        {
+          domain = "@users";
+          item = "rtprio";
+          type = "-";
+          value = 1;
+        }
+      ];
+    };
+  };
   services = {
     # Enable the gnome-keyring secrets vault.
     # Will be exposed through DBus to programs willing to store secrets.
@@ -59,16 +75,6 @@
     enable = true;
     wrapperFeatures.gtk = true;
   };
-
-  # See https://wiki.nixos.org/wiki/Sway#Inferior_performance_compared_to_other_distributions
-  security.pam.loginLimits = [
-    {
-      domain = "@users";
-      item = "rtprio";
-      type = "-";
-      value = 1;
-    }
-  ];
 
   environment = {
     systemPackages = with pkgs; [
