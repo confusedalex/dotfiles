@@ -16,6 +16,7 @@
     ./features/desktop/common/librewolf.nix
     ./features/desktop/common/jellyfin.nix
     ./features/desktop/common/office.nix
+    ./features/desktop/common/firefox.nix
     ./features/desktop/common/school.nix
     ./features/desktop/common/signal.nix
     ./features/desktop/common/syncthing.nix
