@@ -21,7 +21,7 @@
     ./features/desktop/common/signal.nix
     ./features/desktop/common/syncthing.nix
     ./features/desktop/common/wayland-wm
-    ./features/desktop/sway
+    ./features/desktop/hyprland
     ./features/games/prismlauncher.nix
     ./features/games/vintagestory.nix
     ./features/productivity/mail.nix
@@ -45,6 +45,7 @@
         ".config/sops"
         ".local/share/Steam"
         ".local/share/nix" # trusted settings and repl history
+        ".config/hypr"
       ];
       files = [
         ".screenrc"
