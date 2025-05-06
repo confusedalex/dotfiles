@@ -1,6 +1,5 @@
 {
   inputs,
-  pkgs,
   ...
 }:
 {
@@ -9,6 +8,7 @@
     inputs.nur.modules.homeManager.default
     ./features/cli
     ./features/cli/gpg.nix
+    ./features/cli/rclone.nix
     ./features/desktop/common/chromium.nix
     ./features/desktop/common/code.nix
     ./features/desktop/common/emacs.nix
