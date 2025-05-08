@@ -21,6 +21,7 @@
     ./features/desktop/common/signal.nix
     ./features/desktop/common/syncthing.nix
     ./features/desktop/common/wayland-wm
+    ./features/desktop/common/vesktop.nix
     ./features/desktop/hyprland
     ./features/games/prismlauncher.nix
     ./features/games/vintagestory.nix
