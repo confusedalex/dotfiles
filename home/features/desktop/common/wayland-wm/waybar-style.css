@@ -100,7 +100,7 @@ tooltip {
   color: #ebdbb2;
 }
 
-#workspaces button.active {
+#workspaces button.focused {
   color: #D79921;
 }
 

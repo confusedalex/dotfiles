@@ -224,13 +224,18 @@
       bindgesture swipe:right workspace prev
       bindgesture swipe:left workspace next
 
-      # title bar
-      font pango: JetBrainsMono Nerd Font Mono Bold 10
-      for_window [app_id=".*"] border pixel 1
+      font pango:JetbrainsMono Nerd Font Bold 12
 
-      smart_gaps on
-      gaps inner 0
-      gaps outer 5
+      titlebar_padding 1
+      titlebar_border_thickness 0
+
+      # for_window [app_id=".*"] border pixel 1
+
+      gaps inner 13
+      gaps outer 2
+
+      default_border pixel 3
+      default_floating_border pixel 2
 
       # Clamshell mode:
       set $laptop eDP-1

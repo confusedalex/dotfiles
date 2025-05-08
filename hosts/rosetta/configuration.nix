@@ -20,7 +20,7 @@
     ../common/optional/pipewire.nix
     ../common/optional/printing.nix
     ../common/optional/steam.nix
-    ../common/optional/hyprland.nix
+    ../common/optional/sway.nix
     ../common/optional/systemd-boot.nix
     ../common/users/alex
   ];

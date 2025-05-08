@@ -22,7 +22,7 @@
     ./features/desktop/common/syncthing.nix
     ./features/desktop/common/wayland-wm
     ./features/desktop/common/vesktop.nix
-    ./features/desktop/hyprland
+    ./features/desktop/sway
     ./features/games/prismlauncher.nix
     ./features/games/vintagestory.nix
     ./features/productivity/mail.nix

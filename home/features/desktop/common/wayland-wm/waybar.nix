@@ -15,7 +15,7 @@
 
         "modules-left" = [
           "custom/logo"
-          "hyprland/workspaces"
+          "sway/workspaces"
         ];
         "modules-center" = [ "clock" ];
         "modules-right" = [
@@ -25,7 +25,7 @@
           "network"
           "battery"
         ];
-        "hyprland/workspaces" = {
+        "sway/workspaces" = {
           "disable-scroll" = true;
           "sort-by-number" = true;
           "on-click" = "activate";
