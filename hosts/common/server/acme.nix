@@ -14,6 +14,12 @@
     };
   };
 
+  services.nginx = {
+    enable = true;
+    clientMaxBodySize = "50000M";
+  };
+  users.users.nginx.extraGroups = [ "acme" ];
+
   sops.secrets.cloudflare_dns_secret = { };
 
   environment.persistence."/persist".directories = [ "/var/lib/acme" ];

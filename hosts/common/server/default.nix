@@ -1,6 +1,5 @@
 {
   imports = [
-    # ./freshrss.nix
     ./acme.nix
     ./actualbudget.nix
     ./adguard.nix
@@ -8,7 +7,7 @@
     ./home-assistant.nix
     ./immich.nix
     ./jellyfin.nix
-    ./minflux.nix
+    ./miniflux.nix
     ./nextcloud.nix
     ./paperless.nix
     ./thelounge.nix
