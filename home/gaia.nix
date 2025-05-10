@@ -4,6 +4,7 @@
     inputs.impermanence.nixosModules.home-manager.impermanence
     ./global
     ./features/cli
+    ./features/desktop/common/emacs.nix
   ];
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
