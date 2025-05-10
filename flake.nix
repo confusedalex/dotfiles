@@ -42,7 +42,6 @@
 
     nur.url = "github:nix-community/NUR";
     jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
-    ghostty.url = "github:ghostty-org/ghostty";
   };
 
   outputs =
