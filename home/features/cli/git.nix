@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     gh
+    git-annex
   ];
 
   programs.lazygit = {
@@ -21,7 +22,7 @@
     };
     userName = "confusedalex";
     userEmail = "alex@confusedalex.dev";
-    signing.key = "05AF71643F6E2ED3";
+    signing.key = "4F279B9B08BE3E11";
 
     includes = [
       {
