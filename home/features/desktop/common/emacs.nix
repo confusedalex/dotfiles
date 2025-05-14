@@ -42,6 +42,8 @@
 
     # misc
     nodePackages.prettier
+    jdk
+    graphviz
   ];
 
   home.persistence."/persist/home/alex/".directories = [
