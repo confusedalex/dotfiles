@@ -29,7 +29,7 @@
       modifier = "Mod4";
     };
     extraConfig = ''
-      set $swaylock swaylock --clock --indicator 
+      set $swaylock swaylock --clock --indicator -i /home/alex/.nixfiles/home/wallpapers/emacs-dawn-trans-4k.png
 
       # Autostart
       exec udiskie -nt
