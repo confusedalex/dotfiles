@@ -1,7 +1,6 @@
 {
   inputs,
   pkgs,
-  config,
   ...
 }:
 {
@@ -12,9 +11,7 @@
     (import ./disko.nix { device = "/dev/nvme0n1"; })
     ./hardware-configuration.nix
     ./impermanence.nix
-    # ./plymouth.nix
     ../common/global
-    # ../common/optional/autocpu-freq.nix
     ../common/optional/pipewire.nix
     ../common/users/alex
     ../common/optional/systemd-boot.nix

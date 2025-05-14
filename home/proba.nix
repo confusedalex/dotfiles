@@ -5,9 +5,9 @@
     ./global
     ./features/cli
     ./features/cli/gpg.nix
+    ./features/desktop/common/emacs.nix
     ./features/desktop/common
     ./features/desktop/common/wayland-wm
-    ./features/games
     ./features/productivity
     ./features/desktop/sway
   ];
