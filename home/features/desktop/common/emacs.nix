@@ -2,6 +2,10 @@
 {
   stylix.targets.emacs.enable = false;
 
+  home.sessionVariables = {
+    LSP_USE_PLISTS = "true";
+  };
+
   programs.emacs = {
     enable = true;
     package = pkgs.emacs-pgtk;
@@ -15,7 +19,7 @@
   home.packages = with pkgs; [
     # copilot
     copilot-language-server
-	
+
     # email
     mu
 
@@ -44,6 +48,7 @@
     nodePackages.prettier
     jdk
     graphviz
+    eslint
   ];
 
   home.persistence."/persist/home/alex/".directories = [
