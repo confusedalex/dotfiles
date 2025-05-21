@@ -36,22 +36,21 @@
 
   networking.hostName = "rosetta"; # Define your hostname.
 
+  # Enable propritary drivers :/
+  hardware.enableAllFirmware = true;
+  hardware.cpu.intel.updateMicrocode = true;
+
   hardware.graphics = {
-    # hardware.opengl in 24.05 and older
     enable = true;
     extraPackages = with pkgs; [
-      intel-media-driver # For Broadwell (2014) or newer processors. LIBVA_DRIVER_NAME=iHD
-      intel-vaapi-driver # For older processors. LIBVA_DRIVER_NAME=i965
+      vpl-gpu-rt
+      intel-compute-runtime
     ];
   };
-  environment.sessionVariables = {
-    LIBVA_DRIVER_NAME = "iHD";
-  };
-
-  fonts.packages = [ pkgs.atkinson-hyperlegible ];
 
   services.hardware.bolt.enable = true;
   services.udisks2.enable = true;
+  services.fwupd.enable = true;
 
   boot = {
     loader.systemd-boot.enable = true;
@@ -62,7 +61,7 @@
     ];
     resumeDevice = "/dev/disk/by-label/nixos";
   };
-  
+
   # needed for vintage story to run
   nixpkgs.config.permittedInsecurePackages = [
     "dotnet-runtime-7.0.20"
