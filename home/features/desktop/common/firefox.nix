@@ -10,10 +10,6 @@ _:
       directories = [
         ".mozilla/firefox"
       ];
-      files = [
-        # mimeapps.list is a file where default apps are listed. So firefox stays default browser
-        ".config/mimeapps.list"
-      ];
     };
   };
 }

@@ -1,6 +1,7 @@
 {
   lib,
   inputs,
+  config,
   ...
 }:
 {
@@ -51,6 +52,13 @@
     files = [
       "/etc/machine-id"
     ];
+    users.alex = {
+      inherit (config.home-manager.users.alex.home.persistence."/persist/home/alex") files;
+
+      directories = map (
+        obj: obj.directory
+      ) config.home-manager.users.alex.home.persistence."/persist/home/alex".directories;
+    };
   };
 
   programs.fuse.userAllowOther = true;

@@ -34,6 +34,7 @@
     stateVersion = "24.05";
 
     persistence."/persist/home/alex" = {
+      enable = false;
       directories = [
         ".cert" # openvpn networkmanager stuff
         "Downloads"
