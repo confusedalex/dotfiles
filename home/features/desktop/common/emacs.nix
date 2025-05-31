@@ -46,6 +46,7 @@
 
     # misc
     nodePackages.prettier
+    semgrep
     jdk
     graphviz
     eslint
