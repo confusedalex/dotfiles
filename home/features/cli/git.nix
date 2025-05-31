@@ -37,6 +37,22 @@
         };
       }
     ];
+
+    extraConfig = {
+      url = {
+        "git@githum.com:confusedalex" = {
+          insteadOf = "me";
+        };
+        "git@github.com:" = {
+          insteadOf = "gh";
+        };
+      };
+    };
+  };
+
+  programs.fish.shellAbbrs = {
+    gc = "git status --short";
+    gl = "git log";
   };
 
   home.persistence."/persist/home/alex".directories = [
