@@ -20,7 +20,8 @@
     ../common/optional/pipewire.nix
     ../common/optional/printing.nix
     ../common/optional/steam.nix
-    ../common/optional/sway.nix
+    ../common/optional/niri.nix
+    # ../common/optional/sway.nix
     ../common/optional/systemd-boot.nix
     ../common/users/alex
   ];
@@ -30,6 +31,7 @@
   ];
 
   networking.firewall.enable = true;
+
 
   # Disable to stall boot by waiting for network (saves about 5s of boot time)
   systemd.services.NetworkManager-wait-online.enable = false;

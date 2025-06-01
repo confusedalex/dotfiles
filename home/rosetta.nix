@@ -1,3 +1,4 @@
+
 {
   inputs,
   ...
@@ -46,6 +47,7 @@
         ".local/share/keyrings"
         ".local/share/direnv"
         ".config/sops"
+        ".config/niri"
         ".local/share/Steam"
         ".local/share/nix" # trusted settings and repl history
         ".config/hypr"
