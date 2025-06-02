@@ -15,20 +15,30 @@
 
         "modules-left" = [
           "custom/logo"
-          "sway/workspaces"
+          "niri/workspaces"
         ];
         "modules-center" = [ "clock" ];
         "modules-right" = [
           "tray"
           "backlight"
+
           "pulseaudio"
           "network"
           "battery"
         ];
-        "sway/workspaces" = {
+        "niri/workspaces" = {
           "disable-scroll" = true;
-          "sort-by-number" = true;
           "on-click" = "activate";
+          "format" = "{icon}";
+          "all-outputs" = false;
+          "format-icons" = {
+            "dev" = "";
+            "browser" = "";
+            "emacs" = "";
+            "signal" = "󰭹";
+
+            "default" = "";
+          };
         };
         "custom/logo" = {
           format = "󱄅";
