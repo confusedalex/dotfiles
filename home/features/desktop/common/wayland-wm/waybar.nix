@@ -32,7 +32,7 @@
           "format" = "{icon}";
           "all-outputs" = false;
           "format-icons" = {
-            "dev" = "";
+            "dev" = "";
             "browser" = "";
             "emacs" = "";
             "signal" = "󰭹";
