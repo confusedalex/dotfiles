@@ -24,7 +24,7 @@
     ./features/desktop/common/wayland-wm
     ./features/desktop/common/android-studio.nix
     ./features/desktop/common/vesktop.nix
-    ./features/desktop/sway
+    ./features/desktop/niri
     ./features/games/prismlauncher.nix
     ./features/games/vintagestory.nix
     ./features/productivity/mail.nix

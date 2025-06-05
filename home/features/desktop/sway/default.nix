@@ -1,9 +1,7 @@
 { pkgs, ... }:
 {
-  programs.swaylock = {
-    enable = true;
-    package = pkgs.swaylock-effects;
-  };
+
+  imports = [ ../common/wayland-wm/swaylock.nix ];
 
   home.packages = with pkgs; [
     swayidle
