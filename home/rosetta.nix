@@ -14,7 +14,6 @@
     ./features/desktop/common/code.nix
     ./features/desktop/common/emacs.nix
     ./features/desktop/common/intellij.nix
-    ./features/desktop/common/librewolf.nix
     ./features/desktop/common/jellyfin.nix
     ./features/desktop/common/office.nix
     ./features/desktop/common/firefox.nix
@@ -26,7 +25,6 @@
     ./features/desktop/common/vesktop.nix
     ./features/desktop/niri
     ./features/games/prismlauncher.nix
-    ./features/games/vintagestory.nix
     ./features/productivity/mail.nix
     ./global
   ];
