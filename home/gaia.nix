@@ -11,7 +11,7 @@
 
   stylix.enable = lib.mkForce false;
 
-  home.persistence."/persist/home/alex" = {
+  home.persistence."/persist/home/alex/" = {
     directories = [
       "Downloads"
       "docker"

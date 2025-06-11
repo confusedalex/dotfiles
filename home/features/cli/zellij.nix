@@ -11,5 +11,5 @@
     ss = "zellij -l welcome";
   };
 
-  home.persistence."/persist/home/alex".directories = [ ".cache/zellij" ];
+  home.persistence."/persist/home/alex/".directories = [ ".cache/zellij" ];
 }

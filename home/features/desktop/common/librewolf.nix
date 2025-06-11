@@ -5,6 +5,6 @@ _:
   };
 
   home = {
-    persistence."/persist/home/alex".directories = [ ".librewolf" ];
+    persistence."/persist/home/alex/".directories = [ ".librewolf" ];
   };
 }

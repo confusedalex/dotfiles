@@ -55,7 +55,7 @@
     gl = "git log";
   };
 
-  home.persistence."/persist/home/alex".directories = [
+  home.persistence."/persist/home/alex/".directories = [
     # github cli
     ".config/gh"
   ];

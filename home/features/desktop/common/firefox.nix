@@ -6,7 +6,7 @@ _:
     enable = true;
   };
   home = {
-    persistence."/persist/home/alex" = {
+    persistence."/persist/home/alex/" = {
       directories = [
         ".mozilla/firefox"
       ];

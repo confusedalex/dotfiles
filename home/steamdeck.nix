@@ -21,7 +21,7 @@
 
   home.persistence = lib.mkForce { };
 
-  # home.persistence."/persist/home/alex" = {
+  # home.persistence."/persist/home/alex/" = {
   #   directories = [
   #     "Downloads"
   #     "Music"

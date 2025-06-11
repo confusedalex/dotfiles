@@ -46,7 +46,7 @@
     '';
   };
 
-  home.persistence."/persist/home/alex".directories = [
+  home.persistence."/persist/home/alex/".directories = [
     ".tmux"
   ];
 }

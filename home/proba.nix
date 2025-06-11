@@ -14,7 +14,7 @@
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
-  home.persistence."/persist/home/alex" = {
+  home.persistence."/persist/home/alex/" = {
     directories = [
       "Downloads"
       "Music"

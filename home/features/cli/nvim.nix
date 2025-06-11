@@ -14,7 +14,7 @@
 
     sessionVariables.EDITOR = "nvim";
 
-    persistence."/persist/home/alex".directories = [
+    persistence."/persist/home/alex/".directories = [
       ".config/nvim"
       ".local/share/nvim"
       ".config/github-copilot/" # github-copilot plugin for nvim

@@ -53,11 +53,11 @@
       "/etc/machine-id"
     ];
     users.alex = {
-      inherit (config.home-manager.users.alex.home.persistence."/persist/home/alex") files;
+      inherit (config.home-manager.users.alex.home.persistence."/persist/home/alex/") files;
 
       directories = map (
         obj: obj.directory
-      ) config.home-manager.users.alex.home.persistence."/persist/home/alex".directories;
+      ) config.home-manager.users.alex.home.persistence."/persist/home/alex/".directories;
     };
   };
 

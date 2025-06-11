@@ -50,7 +50,7 @@
     };
   };
 
-  home.persistence."/persist/home/alex".directories = [
+  home.persistence."/persist/home/alex/".directories = [
     ".local/share/calendars"
     ".local/share/vdirsyncer/status"
   ];
