@@ -9,6 +9,7 @@
         ".cache/JetBrains"
         ".config/JetBrains"
         ".jdks"
+		".java" # Needed for license persistence
         ".local/share/JetBrains"
         ".m2"
         ".gradle"
