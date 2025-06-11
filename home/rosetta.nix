@@ -1,6 +1,6 @@
-
 {
   inputs,
+  pkgs,
   ...
 }:
 {
@@ -32,7 +32,7 @@
   home = {
     stateVersion = "24.05";
 
-    persistence."/persist/home/alex" = {
+    persistence."/persist/home/alex/" = {
       enable = false;
       directories = [
         ".cert" # openvpn networkmanager stuff
@@ -62,4 +62,13 @@
     "nix-command"
     "flakes"
   ];
+
+  gtk = {
+    enable = true;
+    iconTheme = {
+      name = "Adwaita";
+      package = pkgs.adwaita-icon-theme;
+    };
+  };
+
 }
