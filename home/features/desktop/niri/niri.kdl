@@ -24,7 +24,7 @@ input {
 
 output "eDP-1" {
     scale 1.75
-    transform "normal"
+    mode "2880x1800@60"
 }
 
 output "Lenovo Group Limited LEN T2364pA V3003FVB" {
