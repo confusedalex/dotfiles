@@ -15,9 +15,9 @@ in
     shell = pkgs.fish;
     packages = [ pkgs.home-manager ];
 
-    # extraGroups = [ "wheel" "video" "audio" ]; # Enable ‘sudo’ for the user.
     extraGroups = ifTheyExist [
       "audio"
+	  "adbusers"
       "deluge"
       "docker"
       "git"

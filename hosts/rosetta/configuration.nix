@@ -32,7 +32,6 @@
 
   networking.firewall.enable = true;
 
-
   # Disable to stall boot by waiting for network (saves about 5s of boot time)
   systemd.services.NetworkManager-wait-online.enable = false;
 
@@ -53,6 +52,10 @@
   services.hardware.bolt.enable = true;
   services.udisks2.enable = true;
   services.fwupd.enable = true;
+
+  programs.adb.enable = true;
+
+  nixpkgs.config.android_sdk.accept_license = true;
 
   boot = {
     loader.systemd-boot.enable = true;
