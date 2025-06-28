@@ -16,12 +16,13 @@ in
     packages = [ pkgs.home-manager ];
 
     extraGroups = ifTheyExist [
-      "audio"
 	  "adbusers"
+      "audio"
       "deluge"
       "docker"
       "git"
       "i2c"
+      "kvm"
       "libvirtd"
       "lxd"
       "minecraft"
