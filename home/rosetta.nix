@@ -19,6 +19,7 @@
     ./features/desktop/common/intellij.nix
     ./features/desktop/common/jellyfin.nix
     ./features/desktop/common/office.nix
+    ./features/desktop/common/programming/flutter.nix
     ./features/desktop/common/school.nix
     ./features/desktop/common/signal.nix
     ./features/desktop/common/syncthing.nix
