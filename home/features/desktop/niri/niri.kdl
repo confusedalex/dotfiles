@@ -195,6 +195,7 @@ binds {
     Mod+Shift+Q { close-window; }
     Mod+S { move-workspace-to-monitor-next; }
     Mod+Shift+S { move-workspace-to-monitor-previous; }
+    Mod+N { spawn  "swaync-client" "-t" "-sw"}
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
