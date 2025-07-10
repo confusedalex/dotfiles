@@ -24,6 +24,7 @@
     ./features/desktop/common/signal.nix
     ./features/desktop/common/syncthing.nix
     ./features/desktop/common/thunderbird.nix
+    ./features/desktop/common/tor-browser.nix
     ./features/desktop/common/vesktop.nix
     ./features/desktop/common/wayland-wm
     ./features/desktop/niri
