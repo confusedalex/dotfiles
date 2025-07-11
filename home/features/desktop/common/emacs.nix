@@ -49,7 +49,6 @@
     semgrep
     jdk
     graphviz
-    eslint
   ];
 
   home.persistence."/persist/home/alex/".directories = [
