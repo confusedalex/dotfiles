@@ -51,14 +51,13 @@
     graphviz
   ];
 
-  home.persistence."/persist/home/alex/".directories = [
-    ".emacs.d"
-
-    # mu
-    ".cache/mu"
-
-    # Doom
-    # ".config/emacs"
-    # ".config/doom"
-  ];
+  home.persistence."/persist/home/alex/" = {
+    files = [
+      ".authinfo"
+    ];
+    directories = [
+      ".emacs.d"
+      ".cache/mu"
+    ];
+  };
 }
