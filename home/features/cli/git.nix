@@ -40,6 +40,7 @@
     ];
 
     extraConfig = {
+      github.user = "confusedalex";
       url = {
         "git@githum.com:confusedalex" = {
           insteadOf = "me";
