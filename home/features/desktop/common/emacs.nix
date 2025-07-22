@@ -36,6 +36,8 @@
     ruff
     pyright
 
+    gnuplot
+
     mermaid-cli
 
     # typescript
