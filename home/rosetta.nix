@@ -11,7 +11,6 @@
     ./features/cli
     ./features/cli/gpg.nix
     ./features/cli/rclone.nix
-    ./features/desktop/common/android-studio.nix
     ./features/desktop/common/chromium.nix
     ./features/desktop/common/code.nix
     ./features/desktop/common/emacs.nix
