@@ -70,6 +70,7 @@
   # needed for vintage story to run
   nixpkgs.config.permittedInsecurePackages = [
     "dotnet-runtime-7.0.20"
+    "libxml2-2.13.8"
   ];
 
   system.stateVersion = "24.05"; # Did you read the comment?
