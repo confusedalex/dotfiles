@@ -7,7 +7,7 @@
   imports = [
     inputs.impermanence.nixosModules.home-manager.impermanence
     inputs.nur.modules.homeManager.default
-	./features/games/vintagestory.nix
+    ./features/games/vintagestory.nix
     ./features/cli
     ./features/cli/gpg.nix
     ./features/cli/rclone.nix
