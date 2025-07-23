@@ -3,7 +3,6 @@
   home.packages = with pkgs; [
     gh
     git-annex
-    jujutsu
   ];
 
   programs.lazygit = {
@@ -48,6 +47,16 @@
         "git@github.com:" = {
           insteadOf = "gh";
         };
+      };
+    };
+  };
+
+  programs.jujutsu = {
+    enable = true;
+    settings = {
+      user = {
+        email = "alex@confusedalex.dev";
+        name = "confusedalex";
       };
     };
   };
