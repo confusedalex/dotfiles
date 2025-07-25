@@ -5,7 +5,7 @@
 | Component         | Primary                                                        | Secondary                                                 |
 |-------------------|----------------------------------------------------------------|-----------------------------------------------------------|
 | Distro            | [NixOS](https://nixos.org/)                                    |                                                           |
-| Window Manager    | [swaywm](https://swaywm.org/)                                  |                                                           |
+| Window Manager    | [niri](https://github.com/YaLTeR/niri)                                  |                                                           |
 | Panel Bar         | [waybar](https://github.com/Alexays/Waybar)                    |                                                           |
 | Terminal          | [foot](https://codeberg.org/dnkl/foot)                         |                                                           |
 | Browser           | [Firefox](https://www.mozilla.org/en-US/firefox/)              | [Chromium](https://www.chromium.org)                      |
