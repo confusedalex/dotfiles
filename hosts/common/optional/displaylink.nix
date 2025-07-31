@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   environment.systemPackages = with pkgs; [
     displaylink
@@ -8,6 +8,15 @@
     "displaylink"
     "modesetting"
   ];
+
+  boot = {
+    extraModulePackages = [ config.boot.kernelPackages.evdi ];
+    initrd = {
+      kernelModules = [
+        "evdi"
+      ];
+    };
+  };
 
   systemd.services.dlm.wantedBy = [ "multi-user.target" ];
 
