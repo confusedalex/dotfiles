@@ -10,7 +10,7 @@
     enable = true;
     autoEnable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
-    image = ../../../home/wallpapers/emacs-dawn-trans.svg;
+    image = ../../../home/wallpapers/sunflowers-gruvbox.png;
 
     cursor = {
       name = "Bibata-Modern-Classic";
